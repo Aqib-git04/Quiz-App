@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+<body>
+
+  
+<div id="after-login-page">
+    
+    <div data-aos="fade-right">
+
+    <h1>Quiz App</h1>
+
+    <div id="quizWindow">
+        <ul>
+            <li> <b id="question">Question will be here</b> </li>
+
+            <li> <input class="optionsCheck" name="quizOption" id="option1" type="radio"> <label id="val1"
+                    for="option1">Option 1</label>
+            </li>
+
+            <li> <input class="optionsCheck" name="quizOption" id="option2" type="radio"> <label id="val2"
+                    for="option2">Option 2</label>
+            </li>
+
+            <li> <input class="optionsCheck" name="quizOption" id="option3" type="radio"> <label id="val3"
+                    for="option3">Option 3</label>
+            </li>
+
+            <li> <input class="optionsCheck" name="quizOption" id="option4" type="radio"> <label id="val4"
+                    for="option4">Option 4</label>
+            </li>
+
+        </ul>
+        <button class="Btn" onclick="next()"> Next </button>
+    </div>
+    
+
+    <div class="resultSec" id="result">
+
+        <h5 id="announce"></h5>
+    
+        <table border="1px solid black">
+            <tr>
+                <th>Total Questions</th>
+                <td id="totalQueCount"></td>
+            </tr>
+            <tr>
+                <th>Correct Questions</th>
+                <td id="correctQueCount"></td>
+            </tr>
+        </table>
+    </div>
+    
+    </div>
+</div>
+
+</div>    
+    <script src="app.js"></script>
+</body>
+
+</html>
